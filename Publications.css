@@ -1,0 +1,111 @@
+main{
+  font-size: 15px;
+  background-color: #faf0e6; 
+}
+h1{
+  margin-top: 15pt;
+}
+.heading3{
+  margin-inline: 100pt;
+}
+
+.parentDiv{
+  display: flex; 
+  flex-direction:column; 
+  justify-content:center; 
+  padding: 40pt; 
+  
+}
+.childDiv{
+  flex: 1; 
+  padding: 10px; 
+  margin: 5pt; 
+  background-repeat: no-repeat;
+  background-position:center;
+  padding-top: 50pt;
+  background-size: contain;
+  /*Resizes photo to best fit and retains aspect ratio*/
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.s1{
+  background-image: url(s1.png); 
+  background-position: center bottom;
+}
+.s2{
+  background-image: url(s2.png); 
+}
+.s3{
+  background-image: url(s3.png); 
+}
+
+.publication_cover{
+  width: auto;
+  height: 100pt; 
+  justify-self: center; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+
+.collageParentDiv{
+  display: flex; 
+  flex-direction:column; 
+  justify-content:center; 
+
+
+}
+.collageChildDiv{
+  flex: 1; 
+  padding: 220pt; 
+  margin: 5pt; 
+  background-repeat: no-repeat;
+  background-position:center;
+  padding-top: 50pt;
+  background-size: contain;
+  /*Resizes photo to best fit and retains aspect ratio*/
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+}
+.collage1{
+ background-image: url(History/History1.png); 
+}
+.collage2{
+ background-image: url(History/History2.png); 
+}
+.collage3{
+ background-image: url(History/History3.png); 
+}
+.collage4{
+ background-image: url(History/History4.png); 
+}
+
+@media only screen and (max-width: 500px) {
+  main{font-size: 9px}
+  .heading3{
+    margin-inline: 5pt;
+  }
+  .collageChildDiv{
+    padding: 50pt;
+    
+  }
+}
+/*On screens larger than 500px*/
+@media only screen and (min-width: 500px) {
+  .childDiv{
+     padding: 80px; 
+  }
+  .publication_cover{
+    height: 200pt;
+  }
+}

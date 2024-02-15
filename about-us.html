@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>BHS Literary Magazine</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="aboutUs.css" rel="stylesheet" type="text/css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body onload="init()" > 
+  
+<nav>
+  <!--SIDEBAR NAV-->
+  <ul class="sidebar">
+    <li onclick=hideSidebar()><a href="#"><img src="Logos/x.png" alt="Close button"></a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="current-mag.html">Current Magazine</a></li>
+    <li><a href="Publications.html">Publications</a></li>
+    <li><a href="about-us.html">About Us</a></li>
+
+  </ul>
+  <!--HORIZONTAL NAV-->
+  <ul>
+    <li> 
+      <a href="index.html">
+        <div class="S_Logo"> 
+          <!--<img src="Logos/Soundings.png" style="max-height: 50px;aspect-ratio: 1; max-width:170px; " alt="Soundings Logo">-->
+          <h1 style="margin:0;font-family: Arial, Helvetica, sans-serif;">Soundings</h1>
+        </div> 
+      </a>
+    </li>
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="current-mag.html">Current Magazine</a></li>
+    <li class="hideOnMobile "><a href="Publications.html">Publications</a></li>
+    <li class="hideOnMobile"><a href="about-us.html">About Us</a></li>
+    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="Logos/menu.png" alt="Menu button"></a></li>
+  </ul>
+</nav>
+
+<div> 
+<h1 class="centered" style="padding:10pt; padding-top: 30pt;">Meet the Team</h1>
+<p class="centered" style="padding-left: 60pt; padding-right: 60pt;font-style: italic; padding-bottom: 20pt;"> We modeled our six-word memoirs after Ernest Hemingway. All portraits were designed by our art team.</p>
+
+</div>
+
+
+  
+<section style="border: 2px solid black;align-items: center; ">
+
+<!--ADVISORs-->
+<div id="cardDiv" style="padding: 11px">
+  <div class="CurrentStaffCard">
+    <div><img src="AboutUs/waldman.png"></div>
+    <h3>Ms. Waldman</h3>
+      <p class="subheadings">Advisor</p>
+        <p class="quote">Inevitably, I have become my mother. ; )</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img src="AboutUs/rivera.png"></div>
+    <h3>Ms. Rivera</h3>
+      <p class="subheadings">Advisor</p>
+        <p class="quote">I'm a mighty fierce little flower.</p>
+  </div>
+
+  <!--ADVISORS END-->
+
+  
+  <!--EDITORS -->
+
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/samiya.png"></div>
+    <h3>Samiya Sen</h3>
+      <p class="subheadings"> Editor in Chief</p>
+        <p class="quote">My life's like Beethoven's Moonlight Sonata.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp" src="AboutUs/lyra.png"></div>
+    <h3>Lyra Calub</h3>
+      <p class="subheadings"> Editor in Chief</p>
+        <p class="quote">Name’s Lyra because I’m a star. ✰</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/shobi.png"></div>
+    <h3>Shobi Kim</h3>
+      <p class="subheadings">Content Coordinator and Copy Editor</p>
+        <p class="quote">There’s too little space to write.. </p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp" src="AboutUs/joseph.png"></div>
+    <h3>Joseph Qiao</h3>
+      <p class="subheadings">Content Coordinator and Copy Editor</p>
+        <p class="quote">There’s so much to say, but…</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp" src="AboutUs/magdelene.png"></div>
+    <h3>Magdalene Wehle</h3>
+      <p class="subheadings"> Copy Editor</p>
+        <p class="quote">This magazine’s great; so am I. :)</p>
+  </div>
+
+  <!--EDITORS END-->
+  
+  
+  <!--SECRETARY-->
+ 
+  <div class="CurrentStaffCard">
+    <div><img class="pfp" src="AboutUs/anastasia.png"></div>
+    <h3>Anastasia Andreou</h3>
+      <p class="subheadings"> Secretary</p>
+        <p class="quote">I always save room for dessert.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/rithika.png"></div>
+    <h3>Ritikha Nagah</h3>
+      <p class="subheadings">Secretary</p>
+        <p class="quote">I'm probably reading, writing, or shopping.</p>
+  </div>
+
+  <!--SECRETARY END-->
+
+  
+  <!--FINACIAL-->
+
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/rey.png"></div>
+    <h3>Rey Wu</h3>
+      <p class="subheadings"> Treasurer</p>
+        <p class="quote">Feet on today, eyes on tomorrow.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/zoe.png"></div>
+    <h3>Zoe Chen</h3>
+      <p class="subheadings">Fundraising Chair</p>
+        <p class="quote">I am lit(t)erally a ragdoll cat.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/tiffany.png"></div>
+    <h3>Tiffany Cheng</h3>
+      <p class="subheadings">Assistant Fundraising Chair</p>
+        <p class="quote">My imagination transforms debris into art.</p>
+  </div>
+
+  <!--FINACIAL END-->
+
+  
+  <!--ART-->
+
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/tracy.png"></div>
+    <h3>Tracy Zhou</h3>
+      <p class="subheadings">Art Director</p>
+        <p class="quote">Trying to romanticize my unromantic life.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/caitian.png"></div>
+    <h3>Caitlin Lee</h3>
+      <p class="subheadings">Art Director</p>
+        <p class="quote">My art comes at a price.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/sereh.png"></div>
+    <h3>Serah Han</h3>
+      <p class="subheadings">Director of Design</p>
+        <p class="quote">I eat lots of korean barbeque.</p>
+  </div>
+
+  
+  <!--ART STAFF END-->
+
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/misha.png"></div>
+    <h3>Misha Jabal Abadi</h3>
+      <p class="subheadings">Director of Design</p>
+        <p class="quote">Sunflower in a field of roses.</p>
+  </div>
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/miffy.png"></div>
+    <h3>Miffy (Boyoung) Nam</h3>
+      <p class="subheadings">Head of PR</p>
+        <p class="quote">I have found solace in boxes.</p>
+  </div>
+
+  
+  <div class="CurrentStaffCard">
+    <div><img class="pfp"src="AboutUs/albertyne.png"></div>
+    <h3>Albertyne Lim</h3>
+      <p class="subheadings">Web Design</p>
+        <p class="quote">Thinking about an office job.</p>
+  </div>
+</div> 
+  
+</section>
+
+<!--DISPLAY IS NONE HERE-->
+<main id="content" style="display: none;"> 
+  <!--Filter options START-->
+  <main id="content">
+    <section id="leftpannel" style="padding-left:40px; padding-right: 40px;">     
+      <div class="filterOptions">
+        <h3 ">Filter by Role and Year</h3>
+            Role:<select id="Role"></select> <br> 
+            School Year:<select id="SchoolYear"></select><br> <hr><br> 
+          <a class="button" onclick="filterByRoleAndYear()"> Search </a>
+          <br> <br>
+      </div>
+<hr style="color:black;">
+         <div class="filterOptions">
+            <h3>Filter By Name </h3>
+            Name:<select id="Name"></select><br> 
+
+            <hr>  <br> 
+            <a class="button" onclick="filterByName()"> Search </a> <br> <br>
+         </div>
+
+    </section>  
+  </main> 
+
+
+  <!--Filter options END-->
+
+
+    </section>   
+  <!--class="card"-->
+   <section id="rightPanel">
+
+
+     <h1>Results </h1> 
+
+     <div id="results"></div> 
+     <div id="output" class="overflowdiv"></div>
+
+
+   </section>
+  
+</main>
+
+  <a class="centered" href="https://soundingsbhs.wixsite.com/bayside-high-school/copy-of-meet-the-team" target="_blank"><h3> Looking for past staff? Click here!</h3> </a>
+
+<!--FOOTER START-->
+<footer class="footer">
+  <div class="footer-left">
+    <img src="Logos/Soundings.png" style="max-height: 90px;aspect-ratio: 1; max-width:279px; " alt="Soundings Logo"> <p class="whiteText">Soundings, Literary and Art Magazine, has been a tradition at Bayside High School dating back as far as 1937. Sadly due to the COVID19 pandemic, publications came to a pause; however, Soundings is now back!</p>
+    <!--<div class="socials">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-tumblr"></i></a>
+    </div> -->
+  </div>
+
+  <ul class="footer-right"> 
+
+  <li>
+    <h2>Publications</h2>
+      <ul class="box">
+        <li><a href="current-mag.html">Current Edition</a></li>
+        <li><a href="Publications.html">Past Editions</a></li>
+        <li><a href="https://forms.gle/grF3QTuSG9CDaQ9T7">Website Feedback</a></li>
+      </ul>
+  </li>
+
+    <li class="features">
+      <h2>About Us</h2>
+        <ul class="box">
+          <li><a href="about-us.html">Meet the Team</a></li>
+          <li><a href="https://www.instagram.com/soundingsbhs/?igshid=MzRlODBiNWFlZA%3D%3D">Instagram</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=bhslitmag@baysidehighschool.org">Email us: soundings@baysidehighschool.org</a></li>
+        </ul>
+    </li>
+
+    <li class="features">
+      <h2>Useful Links</h2>
+        <ul class="box">
+          <li><a href="https://docs.google.com/document/d/11ywypShimWV8zuIcFY4tmghffdeh-wNVQPGMss10wvU/edit">Media Consent Form</a></li>
+          <li><a href="https://soundingsbhs.wixsite.com/bayside-high-school/4">2022-2023 Literary Magazine Website</a></li>
+          <li><a href="index.html">Announcements/Events</a></li>
+        </ul>
+    </li>
+    </ul>
+      <div class="footer-bottom"> 
+      <p> All rights reserved </p>
+      </div>
+</footer>
+
+
+
+  <script src="aboutUs.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html></section>

@@ -1,0 +1,150 @@
+#content{ /*Parent div; child div: right and left pannel*/
+  display: flex;
+  
+}
+#leftpannel{
+  flex: 2;
+  padding: 7pt;
+  margin-top:30pt; 
+  
+}
+#leftpannel div{
+ padding: 6pt; 
+ text-align: center;
+  border: 1px solid black; 
+  
+}
+#rightPanel{
+  flex:5;
+  text-align:center;
+  padding:5px;
+  border: 1px solid black; 
+  margin: 5pt;
+  margin-right:20pt; 
+  margin-bottom: 30pt;
+  margin-top:30pt; 
+}
+
+.filterOptions{
+  padding: 10px;
+  border: 1px solid black; 
+
+}
+
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  background-color: #ffffff;
+  max-width: 300px;
+  min-width: 250px; 
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 15px;
+  align-items:center; 
+}
+
+.button{
+  text-decoration:none;
+  background-color:blue;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+}
+
+#output{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overflowdiv{
+  height: 29rem;
+  overflow: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+  border: 1px solid black;
+
+}
+
+.quote{
+  font-style: italic; 
+  color:gray; 
+}
+
+img {
+  width: 100%; /* or any custom size */
+  height: 100%; 
+   object-fit: contain;
+}
+
+
+.cardDiv div{
+  display:flex; 
+  max-width: 500px;
+  border: 1px solid black; 
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  text-align: center
+
+  
+}
+.CurrentStaffCard{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  display: inline-block; 
+  
+  height: auto;
+
+  border-radius: 15px;
+  
+
+  vertical-align: top;
+  justify-self: center;
+
+
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  
+}
+.pfp{
+  height:13%;
+}
+
+@media(max-width:800px){
+  .CurrentStaffCard{
+    max-width: 100px;
+    display:-moz-inline-stack; 
+    font-size: 12pt;
+  }
+  #leftpannel div{
+    font-size: 12pt;
+  }
+  #rightPanel{
+    font-size: 12pt; 
+  }
+  #content{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .CurrentStaffCard{
+    width: 60%;
+  }
+  .pfp{
+    height:40%;
+  }
+}

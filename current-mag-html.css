@@ -1,0 +1,111 @@
+main{
+  font-size: 15pt;
+  background-color: #F6F3E7;
+  overflow-x: hidden;
+}
+
+
+.leftPannel{
+  display:flex; 
+  flex:1; 
+  padding: 10pt; 
+  flex-direction: column;
+
+}
+
+.rightPannel{
+  display:flex; 
+  flex:1; 
+  padding: 10pt; 
+  flex-direction: column;
+} 
+
+
+
+.overflowing-div{
+  height: 500pt;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll; 
+  border: 1px solid black;
+  padding: 2pt; 
+  display: flex;
+  flex-direction: column;
+  flex: 12;
+  padding-bottom: 20pt;
+  padding-top: 20pt;
+  margin-bottom: 30pt;
+
+
+  background-color: #d1cccc;
+
+}
+
+.currentMagImgDiv{
+  object-fit: cover;
+  position: center;
+  display: flex;
+  flex:1; 
+  margin:9pt;
+  width:auto;
+  
+  
+}
+
+.magImg{
+  margin: auto;
+  display: block;
+   max-width: 870px;
+
+
+}
+
+.center{
+  position: center;
+  text-align: center;
+}
+
+.onePage{
+  display: none; 
+}
+.doublePage{
+  display: block;
+ 
+}
+
+/*Change this to make font across the page smaller*/
+
+@media only screen and (max-width: 400px) { /*550*/
+  main{
+    font-size: 9pt; 
+
+  }
+  .rightPannel{
+    display:none;
+  }
+  .leftPannel{
+    display:none;
+  }
+  .overflowing-div{
+    max-width:355px;
+    padding:auto;
+    overflow-x: scroll;
+  }
+  .onePage{
+    display: block; 
+
+
+  }
+  .doublePage{
+    display:none; 
+  }
+  .magImg{
+    max-width: 300px;
+    object-fit: contain; 
+  }
+
+
+}
+
+
+
